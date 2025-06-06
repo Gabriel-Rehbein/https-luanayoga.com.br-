@@ -31,7 +31,7 @@ try {
         $stmt = $pdo->prepare("INSERT INTO password_resets (email, token, expires_at) VALUES (?, ?, ?)");
         $stmt->execute([$email, $token, $expires_at]);
 
-        $linkDeRecuperacao = "http://localhost/fullstackLuanaMoreira/frontend/paginas/redefinir_senha.html?token=" . $token;
+        $linkDeRecuperacao = "http://localhost/https-luanayoga.com.br-/paginas/redefinir_senha.html?token=" . $token;
         
         // --- LÓGICA DE ENVIO DE E-MAIL (Usando mail() básico como placeholder) ---
         // Lembre-se que o ideal aqui é usar PHPMailer para garantir a entrega
