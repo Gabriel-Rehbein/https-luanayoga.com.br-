@@ -13,14 +13,15 @@ app.use(express.json());
 
 // Conexão com MySQL
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "",
-  database: process.env.DB_NAME || "agenda",
+  host: "mysql.hostinger.com",
+  user: "u426680106_LuanaMoreira",       // o mesmo usado no PHP
+  password: "LmBD123@",           // mesma senha
+  database: "u426680106_luana_moreira",
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
 });
+
 
 // Rota de teste
 app.get("/", (req, res) => {

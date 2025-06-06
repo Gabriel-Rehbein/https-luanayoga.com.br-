@@ -1,3 +1,6 @@
+fetch(window.baseUrl + "verifica_login.php")
+
+
 document.getElementById("hamburger").addEventListener("click", function () {
   const nav = document.querySelector(".nav-links");
   nav.classList.toggle("active");
@@ -5,7 +8,7 @@ document.getElementById("hamburger").addEventListener("click", function () {
 });
 
 function getBasePath() {
-  return window.location.pathname.includes("/paginas/") ? "../" : "./";
+  return window.location.pathname.includes("./paginas/") ? "../" : "./";
 }
 
 // Modal de Login

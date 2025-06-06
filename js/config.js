@@ -1,6 +1,9 @@
 // config.js
 // frontend/js/config.js
-const API_URL = "http://localhost/https-luanayoga.com.br-";
+// config.js
+window.baseUrl = "https://luanayoga.com.br/php/";
+
+
 
 // Versão antiga com pasta PHP no frontend
 // O código abaixo não é mais necessário, a variável acima é mais direta.
